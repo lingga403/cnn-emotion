@@ -3,13 +3,13 @@ import numpy as np
 from keras.models import load_model
 
 # Load the model
-model = load_model(r'C:\Users\Asus\Downloads\converted_keras (1)\keras_model.h5')
+model = load_model(r'keras_model.h5')
 
 # CAMERA can be 0 or 1 based on default camera of your computer.
 camera = cv2.VideoCapture(0)
 
 # Grab the labels from the labels.txt file. This will be used later.
-labels = open(r'C:\Users\Asus\Downloads\converted_keras (1)\labels.txt').readlines()
+labels = open(r'labels.txt').readlines()
 
 while True:
     # Grab the webcameras image.
